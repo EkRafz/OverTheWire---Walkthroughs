@@ -55,9 +55,9 @@ overthewire/
 │
 ├── README.md               ← You are here
 │
-└── bandit/
-    ├── README.md           ← Bandit index and level table
-    └── walkthroughs/
+└── Bandit/
+    ├── bandit-README.md           ← Bandit index and level table
+    └── Walkthroughs/
         ├── how-to-connect-to-the-server.md
         ├── bandit-level-0-level-1.md
         └── ...
