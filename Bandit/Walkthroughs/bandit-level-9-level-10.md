@@ -155,3 +155,5 @@ bandit9@bandit:~$ exit
 - `strings` extracts human-readable sequences from binary files. It is the standard first step when a binary file is known to contain embedded text.
 - `strings FILE | grep PATTERN` is the standard pattern for finding a specific string inside a binary file.
 - Running `cat` on a binary file can corrupt your terminal display. When `file` reports anything other than `ASCII text`, reach for `strings` first.
+
+---

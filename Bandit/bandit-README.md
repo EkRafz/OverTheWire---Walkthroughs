@@ -47,12 +47,12 @@ Never used SSH before? Start with the [connection guide](Walkthroughs/how-to-con
 | [Level 2 → 3](Walkthroughs/bandit-level-2-level-3.md)                    | Filenames with spaces, escaping with `\`, quoting   | ✅      |
 | [Level 3 → 4](Walkthroughs/bandit-level-3-level-4.md)                    | Hidden files, `ls -la`, file metadata, `cd`         | ✅      |
 | [Level 4 → 5](Walkthroughs/bandit-level-4-level-5.md)                    | `file` command, glob wildcards `*`, binary vs ASCII | ✅      |
-| [Level 5 → 6](Walkthroughs/bandit-level-5-level-6.md)                    | `find` by size/type/permissions, pipes `\|`, `grep` | ✅      |
+| [Level 5 → 6](Walkthroughs/bandit-level-5-level-6.md)                    | `find` by size/type/permissions, pipes \| , `grep`  | ✅      |
 | [Level 6 → 7](Walkthroughs/bandit-level-6-level-7.md)                    | `find` across `/`, stderr, `2>/dev/null`            | ✅      |
 | [Level 7 → 8](Walkthroughs/bandit-level-7-level-8.md)                    | `grep`, `wc -l`, searching large files              | ✅      |
-| [level 8→ 9](Walkthroughs/bandit-level-8-level-9.md)                     | `sort`, `uniq`, searching unique string             | ✅      |
-| [level 8→ 9](Walkthroughs/bandit-level-9-level-10.md)                    | `strings`, non human-readable files                 | ✅      |
-| Level 10 → 11                                                            | —                                                   | 🔜     |
+| [Level 8→ 9](Walkthroughs/bandit-level-8-level-9.md)                     | `sort`, `uniq`, searching unique string             | ✅      |
+| [Level 8→ 9](Walkthroughs/bandit-level-9-level-10.md)                    | `strings`, non human-readable files                 | ✅      |
+| [Level 10→ 11](Walkthroughs/bandit-level-10-level-11.md)                 | `base64`, `-d` to decode the data                   | ✅      |
 | Level 11 → 12                                                            | —                                                   | 🔜     |
 | Level 12 → 13                                                            | —                                                   | 🔜     |
 | Level 13 → 14                                                            | —                                                   | 🔜     |

@@ -31,20 +31,20 @@ Each wargame has its own folder containing an index and one file per level. Ever
 
 ## Wargames Index
 
-| Wargame                             | Difficulty              | Topic                                    | Status                      |
-| ----------------------------------- | ----------------------- | ---------------------------------------- | --------------------------- |
-| [Bandit](./Bandit/bandit-README.md) | Beginner                | Linux fundamentals, SSH, shell basics    | 🟢 In Progress (Levels 0–9) |
-| Leviathan                           | Beginner                | Basic exploitation, SUID binaries        | 🔜 Coming Soon              |
-| Natas                               | Beginner → Intermediate | Web security, PHP, SQL injection         | 🔜 Coming Soon              |
-| Krypton                             | Beginner → Intermediate | Cryptography and ciphers                 | 🔜 Coming Soon              |
-| Narnia                              | Intermediate            | C binary exploitation, memory corruption | 🔜 Coming Soon              |
-| Behemoth                            | Intermediate            | Binary exploitation, shellcode           | 🔜 Coming Soon              |
-| Utumno                              | Intermediate            | Advanced binary exploitation             | 🔜 Coming Soon              |
-| Maze                                | Intermediate            | Reverse engineering                      | 🔜 Coming Soon              |
-| Vortex                              | Advanced                | Shellcoding, format strings              | 🔜 Coming Soon              |
-| Manpage                             | Advanced                | Linux internals                          | 🔜 Coming Soon              |
-| Drifter                             | Advanced                | Heap exploitation                        | 🔜 Coming Soon              |
-| Formula                             | Advanced                | Advanced exploitation                    | 🔜 Coming Soon              |
+| Wargame                             | Difficulty              | Topic                                    | Status                       |
+| ----------------------------------- | ----------------------- | ---------------------------------------- | ---------------------------- |
+| [Bandit](./Bandit/bandit-README.md) | Beginner                | Linux fundamentals, SSH, shell basics    | 🟢 In Progress (Levels 0–10) |
+| Leviathan                           | Beginner                | Basic exploitation, SUID binaries        | 🔜 Coming Soon               |
+| Natas                               | Beginner → Intermediate | Web security, PHP, SQL injection         | 🔜 Coming Soon               |
+| Krypton                             | Beginner → Intermediate | Cryptography and ciphers                 | 🔜 Coming Soon               |
+| Narnia                              | Intermediate            | C binary exploitation, memory corruption | 🔜 Coming Soon               |
+| Behemoth                            | Intermediate            | Binary exploitation, shellcode           | 🔜 Coming Soon               |
+| Utumno                              | Intermediate            | Advanced binary exploitation             | 🔜 Coming Soon               |
+| Maze                                | Intermediate            | Reverse engineering                      | 🔜 Coming Soon               |
+| Vortex                              | Advanced                | Shellcoding, format strings              | 🔜 Coming Soon               |
+| Manpage                             | Advanced                | Linux internals                          | 🔜 Coming Soon               |
+| Drifter                             | Advanced                | Heap exploitation                        | 🔜 Coming Soon               |
+| Formula                             | Advanced                | Advanced exploitation                    | 🔜 Coming Soon               |
 
 ---
 
