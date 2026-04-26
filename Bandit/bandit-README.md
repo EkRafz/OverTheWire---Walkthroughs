@@ -51,7 +51,7 @@ Never used SSH before? Start with the [connection guide](Walkthroughs/how-to-con
 | [Level 6 → 7](Walkthroughs/bandit-level-6-level-7.md)                    | `find` across `/`, stderr, `2>/dev/null`            | ✅      |
 | [Level 7 → 8](Walkthroughs/bandit-level-7-level-8.md)                    | `grep`, `wc -l`, searching large files              | ✅      |
 | [level 8→ 9](Walkthroughs/bandit-level-8-level-9.md)                     | `sort`, `uniq`, searching unique string             | ✅      |
-| Level 9 → 10                                                             | —                                                   | 🔜     |
+| [level 8→ 9](Walkthroughs/bandit-level-9-level-10.md)                    | `strings`, non human-readable files                 | ✅      |
 | Level 10 → 11                                                            | —                                                   | 🔜     |
 | Level 11 → 12                                                            | —                                                   | 🔜     |
 | Level 12 → 13                                                            | —                                                   | 🔜     |
@@ -84,7 +84,7 @@ Never used SSH before? Start with the [connection guide](Walkthroughs/how-to-con
 ```
 bandit/
 │
-├── README.md               ← You are here
+├── bandit-README.md               ← You are here
 └── Walkthroughs/
     ├── how-to-connect-to-the-server.md
     ├── bandit-level-0-level-1.md
