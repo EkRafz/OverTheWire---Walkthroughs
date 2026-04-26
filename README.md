@@ -33,7 +33,7 @@ Each wargame has its own folder containing an index and one file per level. Ever
 
 | Wargame                             | Difficulty              | Topic                                    | Status                       |
 | ----------------------------------- | ----------------------- | ---------------------------------------- | ---------------------------- |
-| [Bandit](./Bandit/bandit-README.md) | Beginner                | Linux fundamentals, SSH, shell basics    | 🟢 In Progress (Levels 0–10) |
+| [Bandit](./Bandit/bandit-README.md) | Beginner                | Linux fundamentals, SSH, shell basics    | 🟢 In Progress (Levels 0–12) |
 | Leviathan                           | Beginner                | Basic exploitation, SUID binaries        | 🔜 Coming Soon               |
 | Natas                               | Beginner → Intermediate | Web security, PHP, SQL injection         | 🔜 Coming Soon               |
 | Krypton                             | Beginner → Intermediate | Cryptography and ciphers                 | 🔜 Coming Soon               |
