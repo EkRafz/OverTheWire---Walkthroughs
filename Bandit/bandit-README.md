@@ -50,14 +50,14 @@ Never used SSH before? Start with the [connection guide](Walkthroughs/how-to-con
 | [Level 5 → 6](Walkthroughs/bandit-level-5-level-6.md)                    | `find` by size/type/permissions, pipes \| , `grep`  | ✅      |
 | [Level 6 → 7](Walkthroughs/bandit-level-6-level-7.md)                    | `find` across `/`, stderr, `2>/dev/null`            | ✅      |
 | [Level 7 → 8](Walkthroughs/bandit-level-7-level-8.md)                    | `grep`, `wc -l`, searching large files              | ✅      |
-| [Level 8→ 9](Walkthroughs/bandit-level-8-level-9.md)                     | `sort`, `uniq`, searching unique string             | ✅      |
-| [Level 8→ 9](Walkthroughs/bandit-level-9-level-10.md)                    | `strings`, non human-readable files                 | ✅      |
-| [Level 10→ 11](Walkthroughs/bandit-level-10-level-11.md)                 | `base64`, `-d` to decode the data                   | ✅      |
-| Level 11 → 12                                                            | —                                                   | 🔜     |
-| Level 12 → 13                                                            | —                                                   | 🔜     |
-| Level 13 → 14                                                            | —                                                   | 🔜     |
-| Level 14 → 15                                                            | —                                                   | 🔜     |
-| Level 15 → 16                                                            | —                                                   | 🔜     |
+| [Level 8 → 9](Walkthroughs/bandit-level-8-level-9.md)                    | `sort`, `uniq`, searching unique string             | ✅      |
+| [Level 8 → 9](Walkthroughs/bandit-level-9-level-10.md)                   | `strings`, non human-readable files                 | ✅      |
+| [Level 10 → 11](Walkthroughs/bandit-level-10-level-11.md)                | `base64`, `-d` to decode the data                   | ✅      |
+| [Level 11 → 12](Walkthroughs/bandit-level-11-level-12.md)                | `tr`, ROT13 decoding                                | ✅      |
+| [Level 12 → 13](Walkthroughs/bandit-level-12-level-13.md)                | `xxd`,`tar`, `gzip`, `bzip2` decompression          | ✅      |
+| [Level 13 → 14](Walkthroughs/bandit-level-13-level-14.md)                | `chomd`, `scp`, ssh auth keys                       | ✅      |
+| [Level 14 → 15](Walkthroughs/bandit-level-14-level-15.md)                | `nc`, localhosts, ports                             | ✅      |
+| [Level 15 → 16](Walkthroughs/bandit-level-15-level-16.md)                | `openssl s_client -connect host:port`               | ✅      |
 | Level 16 → 17                                                            | —                                                   | 🔜     |
 | Level 17 → 18                                                            | —                                                   | 🔜     |
 | Level 18 → 19                                                            | —                                                   | 🔜     |

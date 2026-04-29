@@ -58,7 +58,7 @@ bandit5@bandit:~/inhere$
 
 ---
 
-### Step 3 — Understand the Scale of the Problem
+### Understand the Scale of the Problem
 
 Running `ls` reveals 20 subdirectories:
 
@@ -81,7 +81,7 @@ Checking every file manually across all 20 directories is not realistic. We need
 
 ---
 
-### Step 4 — Find the Right File with `find`
+### Step 3 — Find the Right File with `find`
 
 The `find` command searches a directory tree for files that match criteria you specify. The manual (`man find`) describes the flags we need:
 
@@ -103,7 +103,7 @@ There is only one result, so the `find` command alone is enough to identify the 
 
 ---
 
-### Step 5 — Filter with `grep` (Optional)
+### Step 4 — Filter with `grep` (Optional)
 
 If `find` returned multiple results, you could narrow them down by piping the output into `grep` to show only human-readable files:
 
@@ -118,7 +118,7 @@ This confirms the target: `./maybehere07/.file2`.
 
 ---
 
-### Step 6 — Read the File
+### Step 5 — Read the File
 
 ```bash
 bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
@@ -128,7 +128,7 @@ The file contains the password for [Bandit Level 6 → Level 7](bandit-level-6-l
 
 ---
 
-### Step 7 — Save the Password and Exit
+### Step 6 — Save the Password and Exit
 
 > **Warning:** OverTheWire does not remember your progress. Copy the password now with **`Ctrl + Shift + C`** before closing the session.
 

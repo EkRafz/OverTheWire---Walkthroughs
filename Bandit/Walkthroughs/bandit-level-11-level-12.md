@@ -63,7 +63,7 @@ The file is readable text, but the letters are wrong — every letter has been s
 
 ---
 
-### Step 3 — Understand the Problem
+### Understand the Problem
 
 [ROT13](https://en.wikipedia.org/wiki/ROT13) is a simple **letter substitution cipher** that shifts each letter **13 positions forward** in the alphabet, wrapping around at the end. Because the alphabet has 26 letters, **applying ROT13 twice returns the original text** — **encoding** and **decoding** are the **same operation**.
 
@@ -80,7 +80,7 @@ The `tr` command translates characters — it takes a set of input characters an
 
 ---
 
-### Step 4 — Consult `man tr`
+### Step 3 — Consult `man tr`
 
 ```bash
 bandit11@bandit:~$ man tr
@@ -105,7 +105,7 @@ So `tr SET1 SET2` maps each character in SET1 to the character at the same posit
 
 ---
 
-### Step 5 — Run the Command
+### Step 4 — Run the Command
 
 ```bash
 bandit11@bandit:~$ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
@@ -131,7 +131,7 @@ The decoded output is a plain English sentence containing the password. That is 
 
 ---
 
-### Step 6 — Save the Password and Exit
+### Step 5 — Save the Password and Exit
 
 > **Warning:** OverTheWire does not remember your progress. Copy the password now with **`Ctrl + Shift + C`** before closing the session.
 

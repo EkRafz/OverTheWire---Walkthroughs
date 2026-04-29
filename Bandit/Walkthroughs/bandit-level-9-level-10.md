@@ -58,7 +58,7 @@ data.txt: data
 
 ---
 
-### Step 3 — Understand the Problem
+### Understand the Problem
 
 The file is binary, but the level tells us the password is in one of the **few human-readable strings** inside it, preceded by several `=` characters. Two tools handle this together:
 
@@ -76,7 +76,7 @@ The key insight: most of the bytes in a binary file are non-printable noise. `st
 
 ---
 
-### Step 4 — Consult `man strings` and `man grep`
+### Step 3 — Consult `man strings` and `man grep`
 
 ```bash
 bandit9@bandit:~$ man strings
@@ -116,7 +116,7 @@ We will search for `=` as the pattern, which matches any line containing one or 
 
 ---
 
-### Step 5 — Run the Command
+### Step 4 — Run the Command
 
 ```bash
 bandit9@bandit:~$ strings data.txt | grep "="
@@ -137,7 +137,7 @@ A few lines are printed. The password is on the line preceded by a run of `=` ch
 
 ---
 
-### Step 7 — Save the Password and Exit
+### Step 5 — Save the Password and Exit
 
 > **Warning:** OverTheWire does not remember your progress. Copy the password now with **`Ctrl + Shift + C`** before closing the session.
 

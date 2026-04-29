@@ -63,11 +63,11 @@ The file contains a single line of seemingly random letters, numbers, and `=` ch
 
 ---
 
->**Understand the Problem**
->
->**[Base64](https://en.wikipedia.org/wiki/Base64)** is an **encoding scheme** that represents binary data using only 64 printable ASCII characters (`A–Z`, `a–z`, `0–9`, `+`, `/`) with `=` used as padding at the end. It is **not encryption**, there is no key and no secret. Anyone with the encoded string can decode it instantly. It is used to safely **transmit binary data** over channels that only handle text (email attachments, for example).
->
->The `base64` command **handles** both **encoding** and **decoding**. The `-d` flag switches it to decode mode.
+### Understand the Problem
+
+**[Base64](https://en.wikipedia.org/wiki/Base64)** is an **encoding scheme** that represents binary data using only 64 printable ASCII characters (`A–Z`, `a–z`, `0–9`, `+`, `/`) with `=` used as padding at the end. It is **not encryption**, there is no key and no secret. Anyone with the encoded string can decode it instantly. It is used to safely **transmit binary data** over channels that only handle text (email attachments, for example).
+
+The `base64` command **handles** both **encoding** and **decoding**. The `-d` flag switches it to decode mode.
 
 ---
 

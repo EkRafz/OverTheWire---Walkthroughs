@@ -58,7 +58,7 @@ bandit8@bandit:~$ wc -l data.txt
 
 ---
 
-### Step 3 — Understand the Problem
+### Understand the Problem
 
 The file contains **1001 lines**, the vast majority of which are repeated. We need the single unique line. Two tools handle this job together:
 
@@ -94,7 +94,7 @@ Now `uniq -u` sees the duplicates grouped and correctly outputs only `cherry`. T
 
 ---
 
-### Step 4 — Consult `man sort` and `man uniq`
+### Step 3 — Consult `man sort` and `man uniq`
 
 ```bash
 bandit8@bandit:~$ man sort
@@ -132,7 +132,7 @@ So `-u` tells `uniq` to print only lines that are **not** repeated — exactly w
 
 ---
 
-### Step 5 — Run the Command
+### Step 4 — Run the Command
 
 ```bash
 bandit8@bandit:~$ sort data.txt | uniq -u
@@ -151,7 +151,7 @@ One line is printed. That is the password for [bandit level 9 → level 10](band
 
 ---
 
-### Step 7 — Save the Password and Exit
+### Step 5 — Save the Password and Exit
 
 > **Warning:** OverTheWire does not remember your progress. Copy the password now with **`Ctrl + Shift + C`** before closing the session.
 

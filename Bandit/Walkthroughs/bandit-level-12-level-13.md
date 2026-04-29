@@ -67,7 +67,7 @@ bandit12@bandit:~$ cd /tmp/tmp.aB3xQr9kLm
 
 ---
 
-### Step 3 — Understand the Problem
+### Understand the Problem
 
 The file `data.txt` is a [hexdump](https://en.wikipedia.org/wiki/Hex_dump) — a **human-readable representation of binary data** where **each byte** is printed as **two hexadecimal digits**. Before we can do anything useful, we need to **reverse the hexdump back into binary**. Then we face the real challenge: the binary file has been **compressed multiple times**, using a mix of `gzip`, `bzip2`, and `tar`. We do not know how many layers there are or in what order.
 
@@ -80,7 +80,7 @@ The strategy is a loop:
 
 ---
 
-### Step 4 — Reverse the Hexdump
+### Step 3 — Reverse the Hexdump
 
 ```bash
 bandit12@bandit:/tmp/tmp.aB3xQr9kLm$ man xxd
@@ -112,7 +112,7 @@ bandit12@bandit:/tmp/tmp.aB3xQr9kLm$ xxd -r data.txt > data.bin
 
 ---
 
-### Step 5 — Identify and Decompress Repeatedly
+### Step 4 — Identify and Decompress Repeatedly
 
 Now run `file` on the binary to see what it is:
 
@@ -125,7 +125,7 @@ The output tells you exactly **what to do next**. Use the table below to match `
 
 ---
 
-### Step 6 — Decompression Reference
+### Step 5 — Decompression Reference
 
 #### gzip
 
@@ -198,7 +198,7 @@ Check `man tar`:
 
 ---
 
-### Step 7 — Keep Going Until You Reach Plain Text
+### Step 6 — Keep Going Until You Reach Plain Text
 
 After each decompression step, run `file` on the resulting file. The name of the output file will vary — use `ls` after each step to see what was produced. Continue until `file` reports:
 
@@ -217,7 +217,7 @@ That is the password for [Bandit Level 13 → Level 14](bandit-level-13-level-14
 
 ---
 
-### Step 8 — Save the Password and Exit
+### Step 7 — Save the Password and Exit
 
 > **Warning:** OverTheWire does not remember your progress. Copy the password now with **`Ctrl + Shift + C`** before closing the session.
 

@@ -36,7 +36,7 @@ Use the password you found at the end of [Bandit Level 5 → Level 6](bandit-lev
 
 ---
 
-### Step 2 — Understand the Problem
+### Understand the Problem
 
 In the previous levels, `find` searched inside a specific directory (`inhere`). This time the level description says the file is stored **somewhere on the server** — meaning we need to search the entire filesystem. We do that by starting `find` from `/`, which is the **root of the filesystem** and the parent of every directory on the system.
 
@@ -48,7 +48,7 @@ This alone would **flood the terminal** with every file on the system, including
 
 ---
 
-### Step 3 — Consult `man find` to Find the Right Flags
+### Step 2 — Consult `man find` to Find the Right Flags
 
 We know three things about the file: who owns it (`bandit7`), what group it belongs to (`bandit6`), and how big it is (`33` bytes). The next question is: does `find` have flags for all three? Check the manual:
 
@@ -88,7 +88,7 @@ All three criteria are supported natively by `find` — no need for `grep` this 
 
 ---
 
-### Step 4 — Build the `find` Command
+### Step 3 — Build the `find` Command
 
 Here is the full command:
 
@@ -108,7 +108,7 @@ Each part does the following:
 
 ---
 
-### Step 5 — Understanding `2>/dev/null`
+### Step 4 — Understanding `2>/dev/null`
 
 This part is new and worth understanding properly.
 
@@ -140,7 +140,7 @@ So `2>/dev/null` means: take stream 2 (errors) and redirect it into the void. On
 
 ---
 
-### Step 6 — Run the Command and Read the Result
+### Step 5 — Run the Command and Read the Result
 
 ```bash
 bandit6@bandit:~$ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
@@ -157,7 +157,7 @@ The file contains the password for [Bandit Level 7 → Level 8](bandit-level-7-l
 
 ---
 
-### Step 7 — Save the Password and Exit
+### Step 6 — Save the Password and Exit
 
 > **Warning:** OverTheWire does not remember your progress. Copy the password now with **`Ctrl + Shift + C`** before closing the session.
 

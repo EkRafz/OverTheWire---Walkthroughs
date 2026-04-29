@@ -58,7 +58,7 @@ Nearly 100,000 lines. `wc -l` (word count, lines) is a quick sanity check before
 
 ---
 
-### Step 3 — Understand the Problem
+### Understand the Problem
 
 The level tells us the password is on the same line as the word `millionth`. With nearly 100,000 lines to check, we need a tool that can find that one line without reading the entire file manually.
 
@@ -66,7 +66,7 @@ This is exactly what `grep` is for.
 
 ---
 
-### Step 4 — Consult `man grep` to Understand the Tool
+### Step 3 — Consult `man grep` to Understand the Tool
 
 ```bash
 bandit7@bandit:~$ man grep
@@ -88,7 +88,7 @@ So `grep PATTERN FILE` reads a file line by line and prints only the lines that 
 
 ---
 
-### Step 5 — Find the Password
+### Step 4 — Find the Password
 
 There are **two ways** to search the file. Both produce identical output.
 
@@ -115,7 +115,7 @@ millionth	<password>
 
 ---
 
-### Step 6 — Save the Password and Exit
+### Step 5 — Save the Password and Exit
 
 > **Warning:** OverTheWire does not remember your progress. Copy the password now with **`Ctrl + Shift + C`** before closing the session.
 
