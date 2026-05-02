@@ -31,17 +31,20 @@ Each wargame has its own folder containing an index and one file per level. Ever
 
 ## Wargames Index
 
-| Wargame                             | Difficulty              | Topic                                                   | Status                     |
-| ----------------------------------- | ----------------------- | ---------------------------------------------- | -------------------------- |
-| [Bandit](./Bandit/bandit-README.md) | Beginne Linux fundamentals, SSH, shell basics and git  n  n  n  n  n  n  n  n  n  | 🟢 Completed (Levels 0–33) |
-| Leviathan                           | Beginner                | Basic                                                   | 🔜 Coming Soon             |
-| Natas                               | Beginner → Intermediat                                                            | 🔜 Coming Soon             |
-| Krypton                             | Begin                                                                             | 🔜 Coming Soon             |
-| Narnia                              | Intermediate                      C bi  ary e  ploit  tion,  memor   corr  ption  | 🔜 Coming Soon             |
-| Behemoth                                                                                                                | 🔜 Coming Soon             |
-| Utumno                                                                                                                  | 🔜 Coming Soon             |
-| Ma                                                                                                                      | 🔜 Coming Soon             |
-| V                                                                                                                       | 🔜 Coming S                                                                                                                                            | 🔜 C                                                                                                                                                   |                                                                                                                                                        | 🔜 Coming Soon             |
+| Wargame                             | Difficulty              | Topic                                    | Status                     |
+| ----------------------------------- | ----------------------- | ---------------------------------------- | -------------------------- |
+| [Bandit](./Bandit/bandit-README.md) | Beginner                | Linux fundamentals, SSH, shell basics    | 🟢 Completed (Levels 0–33) |
+| Leviathan                           | Beginner                | Basic exploitation, SUID binaries        | 🔜 Coming Soon             |
+| Natas                               | Beginner → Intermediate | Web security, PHP, SQL injection         | 🔜 Coming Soon             |
+| Krypton                             | Beginner → Intermediate | Cryptography and ciphers                 | 🔜 Coming Soon             |
+| Narnia                              | Intermediate            | C binary exploitation, memory corruption | 🔜 Coming Soon             |
+| Behemoth                            | Intermediate            | Binary exploitation, shellcode           | 🔜 Coming Soon             |
+| Utumno                              | Intermediate            | Advanced binary exploitation             | 🔜 Coming Soon             |
+| Maze                                | Intermediate            | Reverse engineering                      | 🔜 Coming Soon             |
+| Vortex                              | Advanced                | Shellcoding, format strings              | 🔜 Coming Soon             |
+| Manpage                             | Advanced                | Linux internals                          | 🔜 Coming Soon             |
+| Drifter                             | Advanced                | Heap exploitation                        | 🔜 Coming Soon             |
+| Formula                             | Advanced                | Advanced exploitation                    | 🔜 Coming Soon             |
 
 ---
 
