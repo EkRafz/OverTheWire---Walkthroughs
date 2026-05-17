@@ -225,7 +225,7 @@ That is the password for [Natas Level 16 → 17](natas-level-16-level-17.md).
 ## Key Takeaways
 
 - **Incomplete filter lists are bypassable.** Blocking `'`  but not `$()` leaves command substitution fully available. A filter must block every equivalent syntax, not just the most common one.
-- **Grep itself is the exfiltration channel.** No direct output of the password is needed — the presence or absence of dictionary words in the response carries one bit of information per request, which is enough to extract arbitrary data character by character.
+- **Grep itself is the exfiltration channel.** No direct output of the password is needed, the presence or absence of dictionary words in the response carries one bit of information per request, which is enough to extract arbitrary data character by character.
 - **The boolean signal can be inverted.** In Level 15, a hit meant "exists." Here, a hit means "no output", the script logic flips accordingly. Recognising which direction the signal runs is essential before automating.
 - **A canary word makes the signal reliable.** Checking for a known dictionary word (`"the"`) is more robust than counting lines or checking response length, which can vary with whitespace or HTML wrapping.
 
