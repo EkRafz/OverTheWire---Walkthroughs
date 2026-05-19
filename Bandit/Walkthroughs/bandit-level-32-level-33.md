@@ -100,7 +100,7 @@ $ cat /etc/bandit_pass/bandit33
 <password>
 ```
 
-That is the password for bandit33 — and as of this writing, the final level of Bandit.
+That is the password for [Bandit level 33 → level 34](bandit-level-33-level-34).
 
 ---
 
