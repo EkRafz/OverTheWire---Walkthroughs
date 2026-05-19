@@ -75,7 +75,7 @@ Never used SSH before? Start with the [connection guide](Walkthroughs/how-to-con
 | [Level 30 → 31](Walkthroughs/bandit-level-30-level-31.md)                | `git tag`, `git show`, secrets in annotated tags           | ✅      |
 | [Level 31 → 32](Walkthroughs/bandit-level-31-level-32.md)                | `git add -f`, `.gitignore`, `git push`, server-side hooks  | ✅      |
 | [Level 32 → 33](Walkthroughs/bandit-level-32-level-33.md)                | Uppercase shell escape, `$0`, shell special variables      | ✅      |
-| [Level 33 → 34](./Walkthroughs/bandit-level-33-level-34)                 | Final                                                      | ✅      |
+| [Level 33 → 34](./Walkthroughs/bandit-level-33-level-34.md)              | Final                                                      | ✅      |
 
 ---
 
