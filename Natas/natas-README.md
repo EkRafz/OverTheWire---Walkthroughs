@@ -60,9 +60,9 @@ Each subsequent level follows the pattern `http://natasX.natas.labs.overthewire.
 | [Level 21 → 22](Walkthroughs/natas-level-21-level-22.md) | `header()` without `exit()`, redirect body bypass, `curl`      | ✅      |
 | [Level 22 → 23](Walkthroughs/natas-level-22-level-23.md) | PHP type juggling, `strstr()`, string-to-int coercion          | ✅      |
 | [Level 23 → 24](Walkthroughs/natas-level-23-level-24.md) | `strcmp()` array bypass, type mismatch, `NULL` return          | ✅      |
-| [Level 24 → 25](Walkthroughs/natas-level-24-level-25.md) |                                                                | 🔜     |
-| [Level 25 → 26](Walkthroughs/natas-level-25-level-26.md) |                                                                | 🔜     |
-| [Level 26 → 27](Walkthroughs/natas-level-26-level-27.md) |                                                                | 🔜     |
+| [Level 24 → 25](Walkthroughs/natas-level-24-level-25.md) |                                                                | ✅      |
+| [Level 25 → 26](Walkthroughs/natas-level-25-level-26.md) |                                                                | ✅      |
+| [Level 26 → 27](Walkthroughs/natas-level-26-level-27.md) |                                                                | ✅      |
 | [Level 27 → 28](Walkthroughs/natas-level-27-level-28.md) |                                                                | 🔜     |
 | [Level 28 → 29](Walkthroughs/natas-level-28-level-29.md) |                                                                | 🔜     |
 | [Level 29 → 30](Walkthroughs/natas-level-29-level-30.md) |                                                                | 🔜     |
@@ -90,11 +90,11 @@ Natas/
 
 ## Key Differences from Bandit
 
-| Bandit                        | Natas                            |
-| ----------------------------- | -------------------------------- |
-| SSH access to a Linux server  | HTTP access to a web application |
-| Filesystem / shell challenges | Web vulnerability challenges     |
-| Tools: `ls`, `cat`, `grep`…   | Tools: browser DevTools, `curl`  |
-| Teaches Linux fundamentals    | Teaches server-side web security |
+| Bandit                        | Natas                                            |
+| ----------------------------- | ------------------------------------------------ |
+| SSH access to a Linux server  | HTTP access to a web application                 |
+| Filesystem / shell challenges | Web vulnerability challenges                     |
+| Tools: `ls`, `cat`, `grep`…   | Tools: browser DevTools, `curl`, `php`, `python` |
+| Teaches Linux fundamentals    | Teaches server-side web security                 |
 
 ---
