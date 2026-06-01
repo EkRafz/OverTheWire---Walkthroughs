@@ -17,6 +17,8 @@ Passwords are stored in `/etc/natas_webpass/natasX` on the server. You won't get
 
 By the end of Natas you will be comfortable **reading page source**, **manipulating HTTP headers and cookies**, **exploiting command and SQL injection**, **working with encoding and crypto**, and tackling advanced topics like **PHP object injection**, **Perl CGI bugs**, and **PHAR deserialization**.
 
+> I **did not** use any special tools like `burp suite` or anything similar to that. This walkthrough purely uses tools that are available in most linux distros like `php`, `python`, `cURL` and browser tools.
+
 ---
 
 ## Quick Start
@@ -63,8 +65,8 @@ Each subsequent level follows the pattern `http://natasX.natas.labs.overthewire.
 | [Level 24 → 25](Walkthroughs/natas-level-24-level-25.md) |                                                                | ✅      |
 | [Level 25 → 26](Walkthroughs/natas-level-25-level-26.md) |                                                                | ✅      |
 | [Level 26 → 27](Walkthroughs/natas-level-26-level-27.md) |                                                                | ✅      |
-| [Level 27 → 28](Walkthroughs/natas-level-27-level-28.md) |                                                                | 🔜     |
-| [Level 28 → 29](Walkthroughs/natas-level-28-level-29.md) |                                                                | 🔜     |
+| [Level 27 → 28](Walkthroughs/natas-level-27-level-28.md) |                                                                | ✅      |
+| [Level 28 → 29](Walkthroughs/natas-level-28-level-29.md) |                                                                | ✅      |
 | [Level 29 → 30](Walkthroughs/natas-level-29-level-30.md) |                                                                | 🔜     |
 | [Level 30 → 31](Walkthroughs/natas-level-30-level-31.md) |                                                                | 🔜     |
 | [Level 31 → 32](Walkthroughs/natas-level-31-level-32.md) |                                                                | 🔜     |

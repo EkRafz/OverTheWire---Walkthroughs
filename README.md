@@ -13,7 +13,7 @@
 
 ## What is OverTheWire?
 
-[OverTheWire](https://overthewire.org/wargames/) is a platform that teaches Linux and security concepts through **wargames** — **terminal-based challenges** where you find passwords to unlock the next level. No GUI, no hints, just you and a shell.
+[OverTheWire](https://overthewire.org/wargames/) is a platform that teaches Linux and security concepts through **wargames**, **terminal-based challenges** where you find passwords to unlock the next level. No GUI, no hints, just you and a shell.
 
 Each wargame targets a different skill level and topic, building from basic command-line navigation all the way up to binary exploitation and reverse engineering.
 
@@ -25,7 +25,7 @@ Each wargame has its own folder containing an index and one file per level. Ever
 
 **Try the level yourself before opening the walkthrough.** The struggle is where the learning happens.
 
-> **Passwords are never published here**, per [OverTheWire's rules](https://overthewire.org/rules/). The walkthroughs explain *how* to find the password — not what it is.
+> **Passwords are never published here**, per [OverTheWire's rules](https://overthewire.org/rules/). The walkthroughs explain *how* to find the password, not what it is.
 
 ---
 
@@ -34,7 +34,7 @@ Each wargame has its own folder containing an index and one file per level. Ever
 | Wargame                             | Difficulty              | Topic                                    | Status                       |
 | ----------------------------------- | ----------------------- | ---------------------------------------- | ---------------------------- |
 | [Bandit](./Bandit/bandit-README.md) | Beginner                | Linux fundamentals, SSH, shell basics    | 🟢 Completed (Levels 0–34)   |
-| [Natas](./Natas/natas-README.md)    | Beginner                | Web security, PHP, SQL injection         | 🟠 In Progress (levels 0-27) |
+| [Natas](./Natas/natas-README.md)    | Beginner                | Web security, PHP, SQL injection         | 🟠 In Progress (levels 0-29) |
 | Leviathan                           | Beginner                | Basic exploitation, SUID binaries        | 🔴 Coming Soon               |
 | Krypton                             | Beginner → Intermediate | Cryptography and ciphers                 | 🔴 Coming Soon               |
 | Narnia                              | Intermediate            | C binary exploitation, memory corruption | 🔴 Coming Soon               |
@@ -75,8 +75,6 @@ A terminal with SSH. That's it for most wargames.
 | -- | ----- |
 | Linux / macOS | SSH is built in — open a terminal and go |
 | Windows | [Windows Terminal](https://aka.ms/terminal) + [OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse), or use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) |
-
-Later wargames (Narnia, Behemoth, Vortex) involve binary exploitation and will require additional tools like `gdb` and Python. Those are covered in their respective walkthroughs.
 
 ---
 
