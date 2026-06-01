@@ -1,4 +1,11 @@
 
+[![CC BY 4.0][cc-by-shield]][cc-by]
+ 
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
+---
 
 ```
 						 ██████╗ ████████╗██╗    ██╗
@@ -88,3 +95,18 @@ A terminal with SSH. That's it for most wargames.
 | [OverTheWire official site](https://overthewire.org/wargames/) | Game descriptions and hints |
 
 ---
+
+## Licence
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+© 2026 [EkRafz](https://github.com/EkRafz). All walkthroughs, explanations, and content in this repository are original work by EkRafz.
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
