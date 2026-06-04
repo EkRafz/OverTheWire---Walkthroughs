@@ -70,8 +70,8 @@ Each subsequent level follows the pattern `http://natasX.natas.labs.overthewire.
 | [Level 29 → 30](Walkthroughs/natas-level-29-level-30.md) |                                                                | ✅      |
 | [Level 30 → 31](Walkthroughs/natas-level-30-level-31.md) |                                                                | ✅      |
 | [Level 31 → 32](Walkthroughs/natas-level-31-level-32.md) |                                                                | ✅      |
-| [Level 32 → 33](Walkthroughs/natas-level-32-level-33.md) |                                                                | 🔜     |
-| [Level 33 → 34](Walkthroughs/natas-level-33-level-34.md) |                                                                | 🔜     |
+| [Level 32 → 33](Walkthroughs/natas-level-32-level-33.md) |                                                                | ✅      |
+| [Level 33 → 34](Walkthroughs/natas-level-33-level-34.md) |                                                                | ✅      |
 
 ---
 
