@@ -40,17 +40,17 @@ Each subsequent level follows the pattern `leviathanX` as the username. Log in w
 
 ## Levels
 
-| Level                                                      | Skills Introduced                                         | Status |
-| ---------------------------------------------------------- | --------------------------------------------------------- | ------ |
-| [Level 0](leviathan-level-0.md)                            | `ssh`, `-p` flag, initial recon                           | ✅      |
-| [Level 0 → 1](./Walkthroughs/leviathan-level-0-level-1.md) | Hidden directories, `ls -la`, `grep` through backup files | ✅      |
-| [Level 1 → 2](./Walkthroughs/leviathan-level-1-level-2.md) |                                                           | 🔜     |
-| [Level 2 → 3](./Walkthroughs/leviathan-level-2-level-3.md) |                                                           | 🔜     |
-| [Level 3 → 4](./Walkthroughs/leviathan-level-3-level-4.md) |                                                           | 🔜     |
-| [Level 4 → 5](./Walkthroughs/leviathan-level-4-level-5.md) |                                                           | 🔜     |
-| [Level 5 → 6](./Walkthroughs/leviathan-level-5-level-6.md) |                                                           | 🔜     |
-| [Level 6 → 7](./Walkthroughs/leviathan-level-6-level-7.md) |                                                           | 🔜     |
-| [Level 7](./Walkthroughs/leviathan-level-7.md)             |                                                           | 🔜     |
+| Level                                                      | Skills Introduced                                                | Status |
+| ---------------------------------------------------------- | ---------------------------------------------------------------- | ------ |
+| [Level 0](leviathan-level-0.md)                            | `ssh`, `-p` flag, initial recon                                  | ✅      |
+| [Level 0 → 1](./Walkthroughs/leviathan-level-0-level-1.md) | Hidden directories, `ls -la`, `grep` through backup files        | ✅      |
+| [Level 1 → 2](./Walkthroughs/leviathan-level-1-level-2.md) | SUID binaries, `ltrace`, `strcmp`, hardcoded password extraction | ✅      |
+| [Level 2 → 3](./Walkthroughs/leviathan-level-2-level-3.md) |                                                                  | 🔜     |
+| [Level 3 → 4](./Walkthroughs/leviathan-level-3-level-4.md) |                                                                  | 🔜     |
+| [Level 4 → 5](./Walkthroughs/leviathan-level-4-level-5.md) |                                                                  | 🔜     |
+| [Level 5 → 6](./Walkthroughs/leviathan-level-5-level-6.md) |                                                                  | 🔜     |
+| [Level 6 → 7](./Walkthroughs/leviathan-level-6-level-7.md) |                                                                  | 🔜     |
+| [Level 7](./Walkthroughs/leviathan-level-7.md)             |                                                                  | 🔜     |
 
 ---
 
