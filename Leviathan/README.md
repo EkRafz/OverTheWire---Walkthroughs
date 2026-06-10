@@ -19,6 +19,8 @@ By the end of Leviathan you will be comfortable **tracing binary execution** wit
 
 > Like the Bandit and Natas walkthroughs, this one uses only standard Linux tools: `ltrace`, `strace`, `strings`, `file`, `ln`, `grep`, and `bash`, no external frameworks needed.
 
+> **Quick Note**: Since OTW tells you to solve these levels by doing a static analysis first. I thought it would be a great to divide the *walkthrough* in two parts: *Dynamic* and *Static*. Note that I will be first doing leviathan with dynamic analysis and later add the static analysis
+
 ---
 
 ## Quick Start
@@ -38,19 +40,19 @@ Each subsequent level follows the pattern `leviathanX` as the username. Log in w
 
 ---
 
-## Levels
+## Levels: Dynamic
 
-| Level                                                      | Skills Introduced                                                | Status |
-| ---------------------------------------------------------- | ---------------------------------------------------------------- | ------ |
-| [Level 0](leviathan-level-0.md)                            | `ssh`, `-p` flag, initial recon                                  | ✅      |
-| [Level 0 → 1](./Walkthroughs/leviathan-level-0-level-1.md) | Hidden directories, `ls -la`, `grep` through backup files        | ✅      |
-| [Level 1 → 2](./Walkthroughs/leviathan-level-1-level-2.md) | SUID binaries, `ltrace`, `strcmp`, hardcoded password extraction | ✅      |
-| [Level 2 → 3](./Walkthroughs/leviathan-level-2-level-3.md) |                                                                  | 🔜     |
-| [Level 3 → 4](./Walkthroughs/leviathan-level-3-level-4.md) |                                                                  | 🔜     |
-| [Level 4 → 5](./Walkthroughs/leviathan-level-4-level-5.md) |                                                                  | 🔜     |
-| [Level 5 → 6](./Walkthroughs/leviathan-level-5-level-6.md) |                                                                  | 🔜     |
-| [Level 6 → 7](./Walkthroughs/leviathan-level-6-level-7.md) |                                                                  | 🔜     |
-| [Level 7](./Walkthroughs/leviathan-level-7.md)             |                                                                  | 🔜     |
+| Level                                                                      | Skills Introduced                                                       | Status |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------ |
+| [Level 0](Leviathan/Walkthroughs/Dynamic/leviathan-level-0.md)             | `ssh`, `-p` flag, initial recon                                         | ✅      |
+| [Level 0 → 1](Leviathan/Walkthroughs/Dynamic/leviathan-level-0-level-1.md) | Hidden directories, `ls -la`, `grep` through backup files               | ✅      |
+| [Level 1 → 2](Leviathan/Walkthroughs/Dynamic/leviathan-level-1-level-2.md) | SUID binaries, `ltrace`, `strcmp`, hardcoded password extraction        | ✅      |
+| [Level 2 → 3](Leviathan/Walkthroughs/Dynamic/leviathan-level-2-level-3.md) | Symlinks, `ln -s`, filename injection, whitespace in paths              | ✅      |
+| [Level 3 → 4](Leviathan/Walkthroughs/Dynamic/leviathan-level-3-level-4.md) | `ltrace` again, `strcmp` with a different binary, SUID shell escalation | ✅      |
+| [Level 4 → 5](Leviathan/Walkthroughs/Dynamic/leviathan-level-4-level-5.md) |                                                                         | 🔜     |
+| [Level 5 → 6](Leviathan/Walkthroughs/Dynamic/leviathan-level-5-level-6.md) |                                                                         | 🔜     |
+| [Level 6 → 7](Leviathan/Walkthroughs/Dynamic/leviathan-level-6-level-7.md) |                                                                         | 🔜     |
+| [Level 7](Leviathan/Walkthroughs/Dynamic/leviathan-level-7.md)             |                                                                         | 🔜     |
 
 ---
 
