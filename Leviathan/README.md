@@ -49,10 +49,9 @@ Each subsequent level follows the pattern `leviathanX` as the username. Log in w
 | [Level 1 → 2](Leviathan/Walkthroughs/Dynamic/leviathan-level-1-level-2.md) | SUID binaries, `ltrace`, `strcmp`, hardcoded password extraction        | ✅      |
 | [Level 2 → 3](Leviathan/Walkthroughs/Dynamic/leviathan-level-2-level-3.md) | Symlinks, `ln -s`, filename injection, whitespace in paths              | ✅      |
 | [Level 3 → 4](Leviathan/Walkthroughs/Dynamic/leviathan-level-3-level-4.md) | `ltrace` again, `strcmp` with a different binary, SUID shell escalation | ✅      |
-| [Level 4 → 5](Leviathan/Walkthroughs/Dynamic/leviathan-level-4-level-5.md) |                                                                         | 🔜     |
-| [Level 5 → 6](Leviathan/Walkthroughs/Dynamic/leviathan-level-5-level-6.md) |                                                                         | 🔜     |
-| [Level 6 → 7](Leviathan/Walkthroughs/Dynamic/leviathan-level-6-level-7.md) |                                                                         | 🔜     |
-| [Level 7](Leviathan/Walkthroughs/Dynamic/leviathan-level-7.md)             |                                                                         | 🔜     |
+| [Level 4 → 5](Leviathan/Walkthroughs/Dynamic/leviathan-level-4-level-5.md) | Hidden directories, binary output, ASCII/binary decoding                | ✅      |
+| [Level 5 → 6](Leviathan/Walkthroughs/Dynamic/leviathan-level-5-level-6.md) | Symlinks revisited, reading privileged files via a vulnerable binary    | ✅      |
+| [Level 6 → 7](Leviathan/Walkthroughs/Dynamic/leviathan-level-6-level-7.md) | 4-digit PIN brute-force, `bash` loop, SUID binary with numeric input    | ✅      |
 
 ---
 
