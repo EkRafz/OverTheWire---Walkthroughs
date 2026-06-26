@@ -44,15 +44,15 @@ Each subsequent level follows the pattern `kryptonX` as the username. Log in wit
 
 ## Levels
 
-| Level                                                  | Skills Introduced | Status |
-| ------------------------------------------------------ | ----------------- | ------ |
-| [Level 0 → 1](krypton-level-0-level-1.md) |                   | ✅      |
-| [Level 1 → 2](Walkthroughs/krypton-level-1-level-2.md) |                   | ✅      |
-| [Level 2 → 3](Walkthroughs/krypton-level-2-level-3.md) |                   | ✅      |
-| [Level 3 → 4](Walkthroughs/krypton-level-3-level-4.md) |                   | ✅      |
-| [Level 4 → 5](Walkthroughs/krypton-level-4-level-5.md) |                   | ✅      |
-| [Level 5 → 6](Walkthroughs/krypton-level-5-level-6.md) |                   | ✅      |
-| [Level 6 → 7](Walkthroughs/krypton-level-6-level-7.md) |                   | ✅      |
+| Level                                                          | Skills Introduced | Status |
+| -------------------------------------------------------------- | ----------------- | ------ |
+| [Level 0 → 1](Krypton/Walkthroughs/krypton-level-0-level-1.md) |                   | ✅      |
+| [Level 1 → 2](Krypton/Walkthroughs/krypton-level-1-level-2.md) |                   | ✅      |
+| [Level 2 → 3](Krypton/Walkthroughs/krypton-level-2-level-3.md) |                   | ✅      |
+| [Level 3 → 4](Krypton/Walkthroughs/krypton-level-3-level-4.md) |                   | ✅      |
+| [Level 4 → 5](Krypton/Walkthroughs/krypton-level-4-level-5.md) |                   | ✅      |
+| [Level 5 → 6](Krypton/Walkthroughs/krypton-level-5-level-6.md) |                   | ✅      |
+| [Level 6 → 7](Krypton/Walkthroughs/krypton-level-6-level-7.md) |                   | ✅      |
 
 ---
 
