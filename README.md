@@ -43,7 +43,7 @@ Each wargame has its own folder containing an index and one file per level. Ever
 | [Bandit](./Bandit/README.md)       | Beginner                | Linux fundamentals, SSH, shell basics    | 🟢 Completed (Levels 0–34)  |
 | [Natas](./Natas/README.md)         | Beginner                | Web security, PHP, SQL injection         | 🟢 Completed (Levels 0–32)  |
 | [Leviathan](./Leviathan/README.md) | Beginner                | Basic exploitation, SUID binaries        | 🟢 Completed (Levels 0–7)   |
-| [Krypton](./Krypton/README)        | Beginner → Intermediate | Cryptography and ciphers                 | 🟡 In Progress (Levels 2-7) |
+| [Krypton](./Krypton/README.md)     | Beginner → Intermediate | Cryptography and ciphers                 | 🟡 In Progress (Levels 4-7) |
 | Narnia                             | Intermediate            | C binary exploitation, memory corruption | 🔴 Coming Soon              |
 | Behemoth                           | Intermediate            | Binary exploitation, shellcode           | 🔴 Coming Soon              |
 | Utumno                             | Intermediate            | Advanced binary exploitation             | 🔴 Coming Soon              |
