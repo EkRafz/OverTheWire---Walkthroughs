@@ -137,7 +137,7 @@ Output:
 WELLD ONETH ELEVE LFOUR PASSW ORDIS <password>
 ```
 
-The password is `BRUTE`, the final word, which is the level 4 password, for [Krypton Level 4 → 5](krypton-level-4-level-5.md).
+This is the password for [Krypton Level 4 → 5](krypton-level-4-level-5.md).
 
 ---
 
