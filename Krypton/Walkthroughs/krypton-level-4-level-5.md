@@ -67,7 +67,7 @@ No `encrypt` binary this time, and no keyfile. The attack surface is the two kno
 
 ### Why Knowing the Key Length Breaks This Open
 
-> If the key length is unknown, the first job is normally the **Kasiski examination** or an **index of coincidence** scan to find it. Here, the level tells you directly: the key length is **6**. That single fact reduces the entire problem back to something already solved in Level 2→3 and 3→4.
+> If the key length is unknown, the first job is normally the **Kasiski examination** or an **index of coincidence** scan to find it. Here, the level tells you directly: the key length is **6**. That single fact reduces the entire problem back to something already solved in [Krypton Level 2 → 3](krypton-level-2-level-3.md) and [Krypton Level 3 → 4](krypton-level-3-level-4.md).
 > 
 > If you split a ciphertext into 6 interleaved streams, every 6th character starting at position 0 goes into stream 1, every 6th starting at position 1 goes into stream 2, and so on, each individual stream was encrypted with **one single key letter** the whole way through. That means each of the 6 streams is just a **Caesar cipher**, and each can be broken independently with frequency analysis.
 
@@ -131,7 +131,7 @@ Each `combined_cols[i]` is now a clean, single-key-letter Caesar stream, roughly
 
 ### Step 4 — Frequency-Analyze Each Column Independently
 
-For each column, test all 26 possible shifts and score them against standard English letter frequencies using a chi-squared statistic (a more robust version of the "top letter = E" trick used in Level 3→4 — it weighs the whole distribution, not just the single most common letter):
+For each column, test all 26 possible shifts and score them against standard English letter frequencies using a chi-squared statistic (a more robust version of the "top letter = E" trick used in [Krypton Level 3 → 4](krypton-level-3-level-4.md), it weighs the whole distribution, not just the single most common letter):
 
 ```python
 freq = {
