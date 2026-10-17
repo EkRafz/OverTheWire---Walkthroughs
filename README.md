@@ -87,12 +87,13 @@ A terminal with SSH. That's it for most wargames.
 
 ## Useful Resources
 
-| Resource | What it's for |
-| -------- | ------------- |
-| [explainshell.com](https://explainshell.com/) | Break down any shell command flag by flag |
-| [tldr.sh](https://tldr.sh/) | Practical, example-driven man pages |
-| [The Linux Command Line (free)](https://linuxcommand.org/tlcl.php) | Best beginner book for the terminal |
-| [OverTheWire official site](https://overthewire.org/wargames/) | Game descriptions and hints |
+| Resource                                                           | What it's for                                |
+| ------------------------------------------------------------------ | -------------------------------------------- |
+| [explainshell.com](https://explainshell.com/)                      | Break down any shell command flag by flag    |
+| [tldr.sh](https://tldr.sh/)                                        | Practical, example-driven man pages          |
+| [The Linux Command Line (free)](https://linuxcommand.org/tlcl.php) | Best beginner book for the terminal          |
+| [OverTheWire official site](https://overthewire.org/wargames/)     | Game descriptions and hints                  |
+| [ShellDex](https://shelldex.ibra.codes/)                           | A definitive compendium of terminal commands |
 
 ---
 
