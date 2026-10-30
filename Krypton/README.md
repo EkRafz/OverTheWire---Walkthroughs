@@ -44,15 +44,15 @@ Each subsequent level follows the pattern `kryptonX` as the username. Log in wit
 
 ## Levels
 
-| Level                                                  | Skills Introduced | Status |
-| ------------------------------------------------------ | ----------------- | ------ |
-| [Level 0 → 1](Walkthroughs/krypton-level-0-level-1.md) |                   | ✅      |
-| [Level 1 → 2](Walkthroughs/krypton-level-1-level-2.md) |                   | ✅      |
-| [Level 2 → 3](Walkthroughs/krypton-level-2-level-3.md) |                   | ✅      |
-| [Level 3 → 4](Walkthroughs/krypton-level-3-level-4.md) |                   | ✅      |
-| [Level 4 → 5](Walkthroughs/krypton-level-4-level-5.md) |                   | ✅      |
-| [Level 5 → 6](Walkthroughs/krypton-level-5-level-6.md) |                   | ✅      |
-| [Level 6 → 7](Walkthroughs/krypton-level-6-level-7.md) |                   | ✅      |
+| Level                                                  | Skills Introduced                                                                                           | Status |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------ |
+| [Level 0 → 1](Walkthroughs/krypton-level-0-level-1.md) | Base64 recognition and decoding, `base64 -d`                                                                | ✅      |
+| [Level 1 → 2](Walkthroughs/krypton-level-1-level-2.md) | ROT13, Caesar-style rotation, `tr` character mapping                                                        | ✅      |
+| [Level 2 → 3](Walkthroughs/krypton-level-2-level-3.md) | Caesar cipher, chosen-plaintext attack on an encryption oracle, setuid binaries, `mktemp`, `ln -s`, `chmod` | ✅      |
+| [Level 3 → 4](Walkthroughs/krypton-level-3-level-4.md) | Monoalphabetic substitution, letter frequency analysis, common-word and trigraph anchors                    | ✅      |
+| [Level 4 → 5](Walkthroughs/krypton-level-4-level-5.md) | Vigenère cipher with known key length, column splitting, chi-squared scoring                                | ✅      |
+| [Level 5 → 6](Walkthroughs/krypton-level-5-level-6.md) | Vigenère cipher with unknown key length, Index of Coincidence, chi-squared per column                       | ✅      |
+| [Level 6 → 7](Walkthroughs/krypton-level-6-level-7.md) | One-time pad vs. stream ciphers, weak keystreams, chosen-plaintext attack to recover the keystream          | ✅      |
 
 ---
 
@@ -84,12 +84,10 @@ Krypton/
 
 ## Core Tools You Will Use
 
-| Tool                                 | What It Does                                                                     |
-| ------------------------------------ | -------------------------------------------------------------------------------- |
-| `base64`                             | Decodes/encodes Level 0 and other Base64-wrapped data                            |
-| `tr`                                 | Character substitution — the workhorse for Caesar/ROT and monoalphabetic ciphers |
-| `python` (or any scripting language) | Automating Caesar/Vigenère encryption, decryption, and brute-forcing             |
-| `hexdump` / `xxd`                    | Byte-level inspection once ciphertext stops being plain ASCII                    |
-| `cryptool`                           | GUI cryptanalysis tool the game itself recommends once levels get harder         |
+| Tool                                 | What It Does                                                                    |
+| ------------------------------------ | ------------------------------------------------------------------------------- |
+| `base64`                             | Decodes/encodes Level 0 and other Base64-wrapped data                           |
+| `tr`                                 | Character substitution, the workhorse for Caesar/ROT and monoalphabetic ciphers |
+| `python` (or any scripting language) | Automating Caesar/Vigenère encryption, decryption, and brute-forcing            |
 
 ---
