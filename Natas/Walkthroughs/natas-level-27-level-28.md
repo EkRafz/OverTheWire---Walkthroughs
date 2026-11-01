@@ -43,7 +43,7 @@ Zero padding found instead of PKCS#7 padding
 
 So: AES, PKCS#7 padding, decrypted server-side, result executed as SQL.
 
-**Is it ECB?** Submit 32 identical characters (e.g. 32 `A`s). Look at the ciphertext. Bytes 16–31 are identical to bytes 32–47. That's ECB — each 16-byte block is encrypted independently with the same key, no state carried between blocks.
+**Is it ECB?** Submit 32 identical characters (e.g. 32 `A`s). Look at the ciphertext. Bytes 16–31 are identical to bytes 32–47. That's ECB, each 16-byte block is encrypted independently with the same key, no state carried between blocks.
 
 **What does the server prepend?** Before encrypting, the server wraps your input in:
 
@@ -127,7 +127,7 @@ print(r.text)
 python3 natas28.py
 ```
 
-The response contains the `password` column from the `users` table — the password for [Natas Level 28 → 29](natas-level-28-level-29.md).
+The response contains the `password` column from the `users` table. the password for [Natas Level 28 → 29](natas-level-28-level-29.md).
 
 ---
 

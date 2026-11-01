@@ -52,7 +52,7 @@ A browser bookmark export, plain HTML, potentially hundreds of entries.
 
 ### Understand Hidden Files and Directories
 
-On a Unix system, any file or directory whose name begins with a `.` is **hidden** — it won't appear in a plain `ls` listing. This is a convention, not a security control; the files are fully accessible to anyone with the right permissions.
+On a Unix system, any file or directory whose name begins with a `.` is **hidden**, it won't appear in a plain `ls` listing. This is a convention, not a security control; the files are fully accessible to anyone with the right permissions.
 
 > The `-a` flag reveals hidden entries. The `-l` flag adds the long format: permissions, ownership, size, and modification time. The `.backup` directory is owned by `leviathan1` but has group read permission for `leviathan0`, that combination is the signal it's meant to be found.
 

@@ -65,7 +65,7 @@ When `page=home`, the server includes the file `home` (or `home.php`). When `pag
 
 The `?page=` parameter here has no input validation. Nothing stops you from supplying an absolute path like `/etc/natas_webpass/natas8` instead of a page name.
 
-This is distinct from the previous level's `.inc` file fetch. There, the file was passively accessible at a known URL. Here, you are actively abusing the server's own file-loading logic to read a file that has no URL at all — it exists only on the server's local filesystem.
+This is distinct from the previous level's `.inc` file fetch. There, the file was passively accessible at a known URL. Here, you are actively abusing the server's own file-loading logic to read a file that has no URL at all, it exists only on the server's local filesystem.
 
 ---
 
@@ -78,7 +78,7 @@ All Natas passwords are stored as files under `/etc/natas_webpass/`. Each file i
 /etc/natas_webpass/natas9   ← contains the natas9 password
 ```
 
-File permissions restrict direct access — `natas8`'s password file is readable by the `natas7` and `natas8` system users, but not by others. The web server process for natas7 runs as the `natas7` user, so it has permission to read `/etc/natas_webpass/natas8`. The LFI vulnerability lets you leverage those permissions through the web server itself.
+File permissions restrict direct access, `natas8`'s password file is readable by the `natas7` and `natas8` system users, but not by others. The web server process for natas7 runs as the `natas7` user, so it has permission to read `/etc/natas_webpass/natas8`. The LFI vulnerability lets you leverage those permissions through the web server itself.
 
 ---
 
@@ -104,7 +104,7 @@ That is the password for [Natas Level 7 → 8](natas-level-7-level-8.md).
 
 - **User input passed to a file-loading function without validation is an LFI vulnerability.** If `?page=home` works, `?page=/etc/passwd` is worth trying. The server cannot tell the difference — both are just strings passed to `include`.
 - **Absolute paths bypass directory assumptions.** A developer might assume `page=home` means "load `home.php` from the web root." Supplying an absolute path like `/etc/natas_webpass/natas8` steps outside that assumption entirely.
-- **Developer comments in HTML source are reconnaissance.** The hint here was not hidden — it was left in a comment visible to anyone who views the source. In a real application, a comment pointing to a sensitive file path is a critical information leak.
-- **LFI impact depends on filesystem permissions.** The vulnerability only exposes files the web server process can read. On a misconfigured server, that can include config files, application source, SSH keys, and password stores — not just intentionally public files.
+- **Developer comments in HTML source are reconnaissance.** The hint here was not hidden, it was left in a comment visible to anyone who views the source. In a real application, a comment pointing to a sensitive file path is a critical information leak.
+- **LFI impact depends on filesystem permissions.** The vulnerability only exposes files the web server process can read. On a misconfigured server, that can include config files, application source, SSH keys, and password stores, not just intentionally public files.
 
 ---

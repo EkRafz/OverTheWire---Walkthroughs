@@ -50,7 +50,7 @@ function validUser($link,$usr){
 }
 ```
 
-Returns `True` if any row matches `username='$user'`, `False` otherwise. Uses `mysqli_real_escape_string()` — no SQL injection.
+Returns `True` if any row matches `username='$user'`, `False` otherwise. Uses `mysqli_real_escape_string()`, no SQL injection.
 
 **`checkCredentials($link, $usr, $pass)`** — validates a password:
 
@@ -117,7 +117,7 @@ if($usr != trim($usr)) {
 }
 ```
 
-Leading and trailing whitespace is explicitly rejected — you cannot register `" natas28"` or `"natas28 "` directly.
+Leading and trailing whitespace is explicitly rejected, you cannot register `" natas28"` or `"natas28 "` directly.
 
 ```php
 $user=mysqli_real_escape_string($link, substr($usr, 0, 64));
@@ -155,7 +155,7 @@ The flow is:
 
 Two constraints make this attack impossible to execute cleanly with two separate `curl` commands:
 
-- The database resets every 5 minutes — a gap between registration and login risks hitting a reset.
+- The database resets every 5 minutes, a gap between registration and login risks hitting a reset.
 - The login step requires a 64-char username (no `"X"`), but `createUser()`'s whitespace check rejects that string outright because `trim("natas28" + 57 spaces)` strips the trailing spaces, causing `$usr != trim($usr)` to fail with "Go away hacker". The 64-char login string cannot be used for registration.
 
 The solution is to send both requests back-to-back in the same script, using different username strings for each:
@@ -167,7 +167,7 @@ import subprocess
 # truncated to 64 on INSERT, stored as "natas28" + 57 spaces
 username_reg   = 'natas28' + ' ' * 57 + 'X'
 
-# Login: 64 chars — matches the stored row exactly via validUser(),
+# Login: 64 chars, matches the stored row exactly via validUser(),
 # cannot be used for registration (trailing spaces trigger "Go away hacker")
 username_login = 'natas28' + ' ' * 57
 
@@ -217,9 +217,9 @@ That is the password for [Natas Level 27 → 28](natas-level-27-level-28.md).
 
 ## Key Takeaways
 
-- **MySQL silently truncates `varchar(N)` inserts.** A 65-char string stored in a `varchar(64)` column keeps only the first 64 chars — no error, no warning.
+- **MySQL silently truncates `varchar(N)` inserts.** A 65-char string stored in a `varchar(64)` column keeps only the first 64 chars, no error, no warning.
 - **`varchar` comparison ignores trailing spaces.** `'natas28'` and `'natas28 '` match the same rows. Combined with truncation, a padded username collides with the real one.
 - **Inconsistent `trim()` usage creates the exploit path.** `validUser()` queries with the raw input; `dumpData()` trims it first. Two different username strings are required: 65 chars (`+ "X"`) to register, 64 chars (no `"X"`) to log in.
-- **The whitespace check is the wrong defence.** `$usr != trim($usr)` only catches leading/trailing spaces on the submitted value — not internal padding followed by a non-space character. A unique index on `username` would have caught the collision at insert time.
+- **The whitespace check is the wrong defence.** `$usr != trim($usr)` only catches leading/trailing spaces on the submitted value, not internal padding followed by a non-space character. A unique index on `username` would have caught the collision at insert time.
 
 ---

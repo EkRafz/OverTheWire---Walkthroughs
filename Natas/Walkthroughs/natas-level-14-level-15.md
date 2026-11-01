@@ -116,7 +116,7 @@ The same unsanitised concatenation as Level 14 — the injection point is identi
 
 Since the page only returns a boolean, the attack asks a series of yes-or-no questions: "Is the character at position N equal to X?" Iterate X over the full charset, record the hit, advance to N+1. One character recovered per up-to-62 requests.
 
-The MySQL function for this is `SUBSTRING(string, position, length)` (1-based indexing). It extracts one character at a known position. To compare it, use `ORD()`, which converts a character to its ASCII ordinal value — an integer. Comparing integers sidesteps collation and case-sensitivity entirely: lowercase `a` is 97, uppercase `A` is 65, `!` is 33 — all unambiguously distinct.
+The MySQL function for this is `SUBSTRING(string, position, length)` (1-based indexing). It extracts one character at a known position. To compare it, use `ORD()`, which converts a character to its ASCII ordinal value, an integer. Comparing integers sidesteps collation and case-sensitivity entirely: lowercase `a` is 97, uppercase `A` is 65, `!` is 33, all unambiguously distinct.
 
 Payload for position 1, testing whether the character is `a` (ASCII 97):
 

@@ -78,7 +78,7 @@ Test with `ls` to verify execution:
 http://natas29.natas.labs.overthewire.org/index.pl?file=|ls%00
 ```
 
-The response shows the files in the web directory — `index.pl`, several `.txt` files. Command injection is confirmed.
+The response shows the files in the web directory, `index.pl`, several `.txt` files. Command injection is confirmed.
 
 Test `pwd` to confirm the working directory:
 
@@ -124,7 +124,7 @@ The fix is to encode the output **before** `CGI::escapeHTML()` can touch it. Pip
 http://natas29.natas.labs.overthewire.org/index.pl?file=|cat index.pl | base64%00
 ```
 
-The null byte terminates after `base64`, dropping the `.txt` suffix. The shell executes `cat index.pl | base64`, and the script prints the resulting base64 blob — which `CGI::escapeHTML()` passes through unchanged, because base64 contains no HTML-special characters.
+The null byte terminates after `base64`, dropping the `.txt` suffix. The shell executes `cat index.pl | base64`, and the script prints the resulting base64 blob, which `CGI::escapeHTML()` passes through unchanged, because base64 contains no HTML-special characters.
 
 The response is a block of base64. Decode it locally:
 
@@ -181,7 +181,7 @@ cat /etc/na''tas_webpass/na''tas30      # single-quote empty string
 cat /etc/na""tas_webpass/na""tas30      # double-quote empty string
 ```
 
-Both commands are identical to `cat /etc/natas_webpass/natas30` at execution time. The shell strips the empty quotes before passing the path to `open()` at the syscall level. The Perl filter never sees the string `"natas"` — it sees `"na''tas_webpass/na''tas30"`, which does not match `/natas/`.
+Both commands are identical to `cat /etc/natas_webpass/natas30` at execution time. The shell strips the empty quotes before passing the path to `open()` at the syscall level. The Perl filter never sees the string `"natas"`, it sees `"na''tas_webpass/na''tas30"`, which does not match `/natas/`.
 
 Alternatively, shell glob wildcards `?` and `*` also work. `?` matches any single character:
 

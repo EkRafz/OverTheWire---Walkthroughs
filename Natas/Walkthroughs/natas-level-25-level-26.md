@@ -72,7 +72,7 @@ class Logger{
 
 `Logger` has three private properties: `$logFile` (where to write), `$initMsg` (written on construction), and `$exitMsg` (written on destruction). The constructor takes a `$file` argument and writes to `/tmp/natas26_<file>.log`, a path under `/tmp/`, which is **not** web-accessible. The default log path is irrelevant to the attack: what matters is that we control `$logFile` in our deserialized object and can point it anywhere the web server process can write, including the web-accessible `img/` directory.
 
-The key method is `__destruct()` — a PHP magic method called automatically when the object is garbage-collected or when the script finishes. It opens `$logFile` and writes `$exitMsg` into it.
+The key method is `__destruct()`, a PHP magic method called automatically when the object is garbage-collected or when the script finishes. It opens `$logFile` and writes `$exitMsg` into it.
 
 **The `drawFromUserdata()` function:**
 
@@ -253,8 +253,8 @@ That is the password for [Natas Level 26 → 27](natas-level-26-level-27.md).
 
 - **`unserialize()` on user input is almost always exploitable.** Deserialization reconstructs objects — including triggering magic methods — from attacker-controlled data. There is no safe way to call `unserialize()` on untrusted input unless the PHP version supports a class whitelist (`allowed_classes` in PHP 7+) and that whitelist excludes every class with a dangerous magic method.
 - **Magic methods are gadgets.** `__destruct()`, `__wakeup()`, `__toString()`, and others run automatically in response to object lifecycle events. Their code executes with the property values encoded in the serialized string — values the attacker controls entirely. A class only needs to exist in scope at the time of `unserialize()` for its magic methods to be exploitable.
-- **The class definition does not travel with the serialized object.** `unserialize()` looks up the class by name in the currently loaded PHP environment. The attacker's payload only needs to name a class that the server already has defined. Here, `Logger` is defined in the same file as the `unserialize()` call — it is always in scope.
+- **The class definition does not travel with the serialized object.** `unserialize()` looks up the class by name in the currently loaded PHP environment. The attacker's payload only needs to name a class that the server already has defined. Here, `Logger` is defined in the same file as the `unserialize()` call, it is always in scope.
 - **Private property names in serialized strings include null bytes.** PHP encodes private properties as `\x00ClassName\x00propertyName`. The attacker's locally generated payload must use the same class name as the server's version — otherwise the property names won't match and the object will be reconstructed with null values instead of the attacker's payload. This is why replicating the exact class structure locally is necessary.
-- **A writable, web-accessible directory turns file-write into RCE.** Writing PHP code to `img/natas26_shell.php` and then fetching it over HTTP is equivalent to uploading a webshell. The attack chain — object injection → `__destruct()` file write → HTTP fetch → code execution — is a standard POP (Property-Oriented Programming) chain.
+- **A writable, web-accessible directory turns file-write into RCE.** Writing PHP code to `img/natas26_shell.php` and then fetching it over HTTP is equivalent to uploading a webshell. The attack chain, object injection → `__destruct()` file write → HTTP fetch → code execution, is a standard POP (Property-Oriented Programming) chain.
 
 ---

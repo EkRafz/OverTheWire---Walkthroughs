@@ -57,8 +57,8 @@ Disallow: /private/
 
 Two critical points:
 
-- **`robots.txt` is always publicly accessible** at `/<domain>/robots.txt`. It has to be — crawlers need to read it. Any human can read it too.
-- **`robots.txt` is not a security control.** It is a polite request. Crawlers that follow it will skip the listed paths, but nothing prevents a person — or a malicious crawler — from visiting them directly.
+- **`robots.txt` is always publicly accessible** at `/<domain>/robots.txt`. It has to be, crawlers need to read it. Any human can read it too.
+- **`robots.txt` is not a security control.** It is a polite request. Crawlers that follow it will skip the listed paths, but nothing prevents a person, or a malicious crawler. from visiting them directly.
 
 In practice, `Disallow` entries in `robots.txt` are a map of paths the server owner considered sensitive enough to hide from search engines. That makes it a useful reconnaissance resource.
 
@@ -120,8 +120,8 @@ That is the password for [Natas Level 3 → 4](natas-level-3-level-4.md).
 
 ## Key Takeaways
 
-- **`robots.txt` is a reconnaissance resource, not a security control.** Any path listed under `Disallow` is something the server owner wanted hidden from search engines — which makes it a list of interesting paths worth visiting manually.
+- **`robots.txt` is a reconnaissance resource, not a security control.** Any path listed under `Disallow` is something the server owner wanted hidden from search engines, which makes it a list of interesting paths worth visiting manually.
 - **Hiding a path does not protect it.** Security through obscurity fails the moment the obscuring mechanism is itself public. `robots.txt` must be readable by crawlers, which means it is readable by everyone.
-- **Comments in source code leak intent.** The hint here was not technical — it was a developer note. Reading source carefully, including throwaway comments, often points to the next step.
+- **Comments in source code leak intent.** The hint here was not technical, it was a developer note. Reading source carefully, including throwaway comments, often points to the next step.
 
 ---

@@ -85,7 +85,7 @@ if(array_key_exists("revelio", $_GET)) {
 }
 ```
 
-This runs unconditionally after the first block — there is no `else`, no early `exit()`, no `die()`. If `revelio` is in the query string, the password is written into the response body regardless of what happened in the first block.
+This runs unconditionally after the first block, there is no `else`, no early `exit()`, no `die()`. If `revelio` is in the query string, the password is written into the response body regardless of what happened in the first block.
 
 The two blocks are not connected. The first block may add a `Location` header to the response; the second block adds the password to the body of that same response. The response goes out containing both.
 
@@ -153,7 +153,7 @@ If you prefer a browser-based approach, route your browser through Burp Suite's 
 http://natas22.natas.labs.overthewire.org/index.php?revelio
 ```
 
-In Burp's **HTTP history**, find the `302` response. The **Response** tab shows the full body — including the password — before the browser followed the redirect. Burp captures and displays every response regardless of status code.
+In Burp's **HTTP history**, find the `302` response. The **Response** tab shows the full body — including the password, before the browser followed the redirect. Burp captures and displays every response regardless of status code.
 
 This is the same information as `curl` produces, just surfaced through a different tool.
 

@@ -71,7 +71,7 @@ Each subsequent level follows the pattern `http://natasX.natas.labs.overthewire.
 | [Level 30 → 31](Walkthroughs/natas-level-30-level-31.md) | `ARGV` filehandle hijack, `param()` multi-value, phar stream          | ✅      |
 | [Level 31 → 32](Walkthroughs/natas-level-31-level-32.md) | Same `ARGV` attack, RCE, setuid binary execution                      | ✅      |
 | [Level 32 → 33](Walkthroughs/natas-level-32-level-33.md) | Phar deserialization, `md5_file()` sink, `__destruct()` gadget        | ✅      |
-| [Level 33 → 34](Walkthroughs/natas-level-33-level-34.md) | End of series                                                         | ✅      |
+| [Level 33 → 34](natas-level-33.md) | End of series                                                         | ✅      |
 
 ---
 

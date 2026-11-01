@@ -135,7 +135,7 @@ Output:
 win!<br>here is your result:<br>natas31<password>
 ```
 
-`print @$ver` prints the fetched row as a flat array with no separator — username and password concatenated directly. The natas31 password is everything after `natas31`.
+`print @$ver` prints the fetched row as a flat array with no separator, username and password concatenated directly. The natas31 password is everything after `natas31`.
 
 That is the password for [Natas Level 30 → 31](natas-level-30-level-31.md).
 

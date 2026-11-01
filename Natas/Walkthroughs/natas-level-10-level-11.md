@@ -194,7 +194,7 @@ Output:
 eDWoeDWoeDWoeDWoeDWoeDWoeDWoeDWoeDWoeDWoe
 ```
 
-The repeating pattern `eDWo` is the XOR key. The repetition confirms both that the key is shorter than the plaintext and that the decryption is correct — a real key repeating cleanly like this is unmistakeable.
+The repeating pattern `eDWo` is the XOR key. The repetition confirms both that the key is shorter than the plaintext and that the decryption is correct, a real key repeating cleanly like this is unmistakeable.
 
 ---
 
@@ -259,7 +259,7 @@ That is the password for [Natas Level 11 → 12](natas-level-11-level-12.md).
 ## Key Takeaways
 
 - **XOR with a short repeating key is not encryption.** A key shorter than the plaintext that repeats character-by-character is a stream cipher with near-zero security. Any attacker who recovers even a few bytes of plaintext can extract the full key and decrypt or forge any ciphertext.
-- **Known-plaintext attacks break XOR trivially.** The algebraic identity `key = plaintext XOR ciphertext` means that if you know what any part of the plaintext is supposed to be — and here the entire default state is hardcoded in the source — you get the key for free.
+- **Known-plaintext attacks break XOR trivially.** The algebraic identity `key = plaintext XOR ciphertext` means that if you know what any part of the plaintext is supposed to be — and here the entire default state is hardcoded in the source, you get the key for free.
 - **Trusting client-supplied cookies to store server state is dangerous.** The server delegated the `showpassword` field to the client. Even "encrypted" client storage is only as secure as the encryption scheme, and here the scheme is broken. Sensitive state like access flags must be kept server-side (e.g. in a server session store), where the client cannot read or tamper with it.
 - **The pipeline is the vulnerability, not just the key.** Even if the key had been stronger, exposing the encoding pipeline (`json_encode → xor_encrypt → base64_encode`) in source code gives attackers all the information they need to understand what a valid cookie looks like and craft one. Security by obscurity only holds while the algorithm stays hidden.
 

@@ -31,7 +31,7 @@ The page displays:
 You can find the password for the next level on this page, but rightclicking has been blocked!
 ```
 
-Right-clicking is disabled via JavaScript, which blocks the context menu that normally contains _View Page Source_. The solution is the same as last level — the right-click menu was just one of several ways to get there.
+Right-clicking is disabled via JavaScript, which blocks the context menu that normally contains _View Page Source_. The solution is the same as last level, the right-click menu was just one of several ways to get there.
 
 ---
 
@@ -41,7 +41,7 @@ Disabling right-click is a **client-side** control. It runs in your browser, on 
 
 - It can only block things the browser handles through that specific event.
 - It has no effect on anything that bypasses the browser's context menu entirely.
-- You already have the page's HTML — your browser downloaded it to render the page. The restriction only prevents one particular way of viewing it.
+- You already have the page's HTML, your browser downloaded it to render the page. The restriction only prevents one particular way of viewing it.
 
 Client-side controls like this are not a security measure. They are a minor inconvenience at best, trivially bypassed, and a useful reminder that **anything the browser can render, you can read**.
 

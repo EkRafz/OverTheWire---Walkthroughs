@@ -76,7 +76,7 @@ The `s` in the owner execute position is the **setuid bit**. When any process ex
 print(run("./getpassword").text)
 ```
 
-The binary runs as the web process, which has read access to `/etc/natas_webpass/natas33`. Its output — the password — is streamed through `@ARGV` into `while (<$file>)` and printed in the response table.
+The binary runs as the web process, which has read access to `/etc/natas_webpass/natas33`. Its output, the password, is streamed through `@ARGV` into `while (<$file>)` and printed in the response table.
 
 Full script:
 

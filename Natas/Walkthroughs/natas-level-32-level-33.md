@@ -150,7 +150,7 @@ python3 natas33.py
 
 The password for natas34 appears in the response.
 
-That is the password for [Natas Level 33 → 34](natas-level-33-level-34.md).
+That is the password for [Natas Level 33](natas-level-33.md).
 
 ---
 

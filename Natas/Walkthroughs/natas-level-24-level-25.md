@@ -126,7 +126,7 @@ The log entry contains three fields:
 
 The `User-Agent` is taken from `$_SERVER['HTTP_USER_AGENT']` and written into the log **without any sanitization or escaping**.
 
-**The `session_start()` ordering problem.** Looking at the full page source, `session_start()` is called in the HTML body, _after_ `setLanguage()` is called. `logRequest()` uses `session_id()` to name the log file. If `session_start()` has not yet been called when `logRequest()` runs, `session_id()` returns an empty string and the log is written to `/var/www/natas/natas25/logs/natas25_.log` — no session ID in the filename at all.
+**The `session_start()` ordering problem.** Looking at the full page source, `session_start()` is called in the HTML body, _after_ `setLanguage()` is called. `logRequest()` uses `session_id()` to name the log file. If `session_start()` has not yet been called when `logRequest()` runs, `session_id()` returns an empty string and the log is written to `/var/www/natas/natas25/logs/natas25_.log`, no session ID in the filename at all.
 
 The fix is to send the `PHPSESSID` cookie explicitly with every request. When PHP receives a `PHPSESSID` cookie, `session_id()` returns its value even before `session_start()` is called explicitly in the script. This means the log filename is determined by the cookie you send, not by whatever session the page eventually starts. You control the session ID → you know the log path.
 
@@ -161,7 +161,7 @@ Send a second request using the traversal filter bypass to reach the log file. S
 ....//....//....//....//....//var/www/natas/natas25/logs/natas25_<PHPSESSID>.log
 ```
 
-After `str_replace("../", "", ...)` processes this — removing each inner `../` — what remains is:
+After `str_replace("../", "", ...)` processes this, removing each inner `../`, what remains is:
 
 ```
 language/../../../../../var/www/natas/natas25/logs/natas25_<PHPSESSID>.log
